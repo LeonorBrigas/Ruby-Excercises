@@ -33,3 +33,12 @@ end
 # Test.assert_equals(song_decoder("AWUBBWUBC"), "A B C","WUB should be replaced by 1 space");
 # Test.assert_equals(song_decoder("AWUBWUBWUBBWUBWUBWUBC"), "A B C","multiples WUB should be replaced by only 1 space");
 # Test.assert_equals(song_decoder("WUBAWUBBWUBCWUB"), "A B C", "heading or trailing spaces should be removed");
+
+# Create a function that returns the sum of the two lowest positive numbers given an array of minimum 4 positive integers.
+# No floats or non-positive integers will be passed.
+
+def sum_two_smallest_numbers(numbers)
+  #Your code here
+ numbers.select(&:positive?).min(2).reduce(:+)
+end
+
