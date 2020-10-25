@@ -52,3 +52,10 @@ def isTriangle(a,b,c)
     false
   end
 end
+
+
+def descending_order(n)
+  array = n.to_s.split(//).map{|i| i.to_i}
+  array_sorted = array.sort_by { |number| -number }
+  array_sorted.join.to_i
+end
