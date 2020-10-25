@@ -42,3 +42,13 @@ def sum_two_smallest_numbers(numbers)
  numbers.select(&:positive?).min(2).reduce(:+)
 end
 
+# The method should return true if a triangle can be built with the sides of given length and false in any other case.
+def isTriangle(a,b,c)
+   # your code
+  a, b, c = [a, b, c].sort
+  if a + b > c
+    true
+  else 
+    false
+  end
+end
