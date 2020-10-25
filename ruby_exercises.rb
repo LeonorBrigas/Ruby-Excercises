@@ -18,6 +18,8 @@ end
 
 
 # song decoder should replace WUB with 1 space
+song_decoder("WUBWEWUBAREWUBWUBTHEWUBCHAMPIONSWUBMYWUBFRIENDWUB")
+  #  =>  WE ARE THE CHAMPIONS MY FRIEND
 
 def song_decoder(song)
   #TODO
